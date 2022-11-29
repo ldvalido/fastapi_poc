@@ -25,7 +25,6 @@ COPY --from=requirements-stage /tmp/requirements.txt /code/requirements.txt
 # 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-RUN pip install uvicorn[standard]
 # 
 COPY fastapi_poc/src /code/app
 
